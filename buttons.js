@@ -8,7 +8,7 @@ $(document).ready(function(){
         e.preventDefault();
         if(x < max_fields){
             x++; //add the number of textboxes
-            $(wrapper).append('<div><input type="text" name="option[]" /><a href="#" class="remove_field">Remove</a></div>');
+            $(wrapper).append('<div>option: <input type="text" name="option[]" /><a href="#" class="remove_field">Remove</a></div>');
         }
     });
     
