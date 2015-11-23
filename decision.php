@@ -4,5 +4,5 @@
     $final_decision = $decision_array[$decision_key];
 ?>
 
-<h1>You should eat...</h1>
+
 <p><?php echo $final_decision; ?></p>
