@@ -35,4 +35,5 @@
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
 </nav>
-<div class="col-md-4 col-md-offset-4 "><img src="page_pic.jpg"></div>
+<h1 class="col-md-6 col-md-offset-3">A decision making tool for the lazy</h1>
+<div class="col-md-4 col-md-offset-4"><img src="page_pic.jpg"></div>

@@ -38,3 +38,11 @@ body {
   border-radius: 0 !important;
   -moz-border-radius: 0 !important;
 }
+
+.answer {
+    clear: both;
+}
+
+.decision {
+    font-size: 2em;
+}

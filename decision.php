@@ -3,16 +3,19 @@
   $decision_key = array_rand($decision_array); //get a random key
   $final_decision = $decision_array[$decision_key]; //store the decision
   $title = "Decision"; // set the title of the web page
-  include_once "header.php"; //inlcude the header
   $question = $_POST["question"];
+  include "header.php"; //inlcude the header
+  ?>
+  
+  <div class='answer col-md-6 col-md-offset-3'>;
+  <h1>The answer to <?php echo '"'.$question.'"' ; ?> is</h1>;
+  <p class="decision"><?php echo $final_decision ?></p>;
+  </div>
+  
+
+<?php
+include "footer.php";
 ?>
 
-<body>
-  <h3>The answer to <?php echo '"'.$question.'"'; ?> is...</h3>
-  <p><?php echo $final_decision ?></p>
-
-<?php 
-  include_once "footer.php";
-?>
 
 
