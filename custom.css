@@ -1,9 +1,40 @@
 body {
     background-color:#D9B488;
+    color: #FBF2E3;
 }
 .btn-info {
-    background:#FA6400;
+    background:#B28B64;
+    border-color: #B28B64;
 }
+
 .btn:focus, .btn:active:focus, .btn.active:focus {
     outline: 0 none;
+}
+
+.btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active, .open > .dropdown-toggle.btn-info {
+    background: #A17253;
+    border-color: #A17253;
+}
+
+.input-group-addon {
+    background: #B28B64;
+    color: white;
+}
+
+.input-group-addon:hover {
+    background: #A17253;
+}
+
+.navbar-inverse {
+    background: #4C494B;
+    color: #D9B488;
+}
+.navbar-brand{
+    background: #4C494B;
+    color: #D9B488;
+}
+
+* {
+  border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
 }

@@ -9,7 +9,7 @@ $(document).ready(function(){
         if(x < max_fields){
             x++; //add the number of textboxes
             //$(wrapper).append('<div>option: <input type="text" name="option[]" /><a href="#" class="remove_field">Remove</a></div>');
-            $('<div><input type="text" name="option[]" class="form-control" placeholder="Write an option" aria-describedby="basic-addon1" required><a href="#" class="remove_field">Remove</a></div>').insertAfter(".input2");     
+            $('<div class="input-group"><input type="text" name="option[]" class="form-control" placeholder="Write an option" aria-describedby="basic-addon1" required><span class="input-group-addon remove_field">Remove</span></div>').insertAfter(".input2");     
             
         }
     });
