@@ -5,19 +5,25 @@ $title = "Decision Maker"; //title of the page
 include "header.php";
 ?>
 
-  <body>
-    <div class="question">
-      <div>Question: <input type="text" name="question"/></div>
-    </div>
-    <form action="decision.php" method="post">
+  <form action="decision.php" method="post" class="col-md-4 col-md-offset-4">
+  <div class="input-group">
+    <label for="question">Question:</label>
+      <input type="text" name="question" class="form-control" placeholder="Question" aria-describedby="basic-addon1" required>
+  </div>
     <div class="input_field_wrap">
-      <button class="add_field_button">Add More Options</button>
-      <div>option: <input type="text" name="option[]" required></div>
-      <div>option: <input type="text" name="option[]" required></div>
-      <div class="submit_options"><input type=submit></div>
+      <div class="input-group">
+        <label for="option[]">Options:</label>
+        <input type="text" name="option[]" class="form-control" placeholder="Write an option" aria-describedby="basic-addon1" required>
+        <input type="text" name="option[]" class="form-control input2" placeholder="Write an option" aria-describedby="basic-addon1" required>
+      </div>  
+      <span class="btn-group">
+      <div class="submit_options"><input class="btn btn-info" type=submit></div>
+      <button class="add_field_button btn btn-info">Add More Options</button>
+      </span>
     </div>
-    </form>
-    <script type = "text/javascript" src = "buttons.js"></script>
-  </body>
-  <!--TODO change this to a footer -->
-</html>
+  
+  </form>
+  <script type = "text/javascript" src = "buttons.js"></script>
+<?php
+  include_once "footer.php";
+?>
